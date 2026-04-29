@@ -1,0 +1,36 @@
+Variables: ("r" Bool) ("r0" Bool) ("r1" Bool) ("g0" Bool) ("g1" Bool)
+Init: 0 1 2 3 12 13 14 15
+--BODY--
+State: 0 {("r" false) ("r0" true) ("r1" false) ("g0" false) ("g1" false)}
+4 5 6 7
+State: 1 {("r" false) ("r0" true) ("r1" true) ("g0" false) ("g1" false)}
+4 5 6 7
+State: 2 {("r" false) ("r0" false) ("r1" false) ("g0" false) ("g1" false)}
+0 1 2 3
+State: 3 {("r" false) ("r0" false) ("r1" true) ("g0" false) ("g1" false)}
+8 9 10 11
+State: 4 {("r" false) ("r0" false) ("r1" false) ("g0" true) ("g1" false)}
+0 1 2 3
+State: 5 {("r" false) ("r0" false) ("r1" true) ("g0" true) ("g1" false)}
+0 1 2 3
+State: 6 {("r" false) ("r0" true) ("r1" false) ("g0" true) ("g1" false)}
+0 1 2 3
+State: 7 {("r" false) ("r0" true) ("r1" true) ("g0" true) ("g1" false)}
+0 1 2 3
+State: 8 {("r" false) ("r0" false) ("r1" false) ("g0" false) ("g1" true)}
+0 1 2 3
+State: 9 {("r" false) ("r0" false) ("r1" true) ("g0" false) ("g1" true)}
+0 1 2 3
+State: 10 {("r" false) ("r0" true) ("r1" false) ("g0" false) ("g1" true)}
+0 1 2 3
+State: 11 {("r" false) ("r0" true) ("r1" true) ("g0" false) ("g1" true)}
+0 1 2 3
+State: 12 {("r" true) ("r0" false) ("r1" false) ("g0" false) ("g1" false)}
+12 13 14 15
+State: 13 {("r" true) ("r0" false) ("r1" true) ("g0" false) ("g1" false)}
+12 13 14 15
+State: 14 {("r" true) ("r0" true) ("r1" false) ("g0" false) ("g1" false)}
+12 13 14 15
+State: 15 {("r" true) ("r0" true) ("r1" true) ("g0" false) ("g1" false)}
+12 13 14 15
+--END--

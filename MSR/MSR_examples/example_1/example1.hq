@@ -1,0 +1,70 @@
+exists pi. exists tau. forall pi2. forall tau2. exists pi3.
+(
+  G ("r"_tau)
+)
+&
+(
+  !{"r"_pi}
+  &
+  "i1"_pi & "i2"_pi & !"o"_pi
+  &
+  (X ("i1"_pi & "i2"_pi & !"o"_pi))
+  &
+  (XX ("i1"_pi & !"i2"_pi & !"o"_pi))
+  &
+  (XXX(
+  G (
+    "i1"_pi & !"i2"_pi & "o"_pi
+    )
+  ))
+)
+&
+(
+  (
+    !{"r"_pi2} 
+    & 
+    G (
+       ({"i1"_tau} -> ({"i1"_pi} <-> {"i1"_pi2})) 
+       & 
+       ({"i2"_tau} -> ({"i2"_pi} <-> {"i2"_pi2}))
+    )
+  )
+  -> 
+  (F {"o"_pi2})
+)
+&
+(
+  "r"_tau2 ->(
+    !
+    (
+      (
+        !{"r"_pi3}
+        & 
+        G (
+          ({"i1"_tau2} -> ({"i1"_pi} <-> {"i1"_pi3})) 
+          & 
+          ({"i2"_tau2} -> ({"i2"_pi} <-> {"i2"_pi3}))
+        )
+      )
+      -> 
+      (F {"o"_pi3})
+    )
+    |
+    G 
+    (
+      ("i1"_tau <-> "i1"_tau2) 
+      &
+      ("i2"_tau <-> "i2"_tau2)
+    )
+    |
+    !
+    (
+      G 
+      (
+        ("i1"_tau2 -> ("i1"_tau))
+        &
+        ("i2"_tau2 -> ("i2"_tau)) 
+      )
+    )
+  )
+)

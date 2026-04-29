@@ -1,0 +1,24 @@
+Variables: ("r" Bool) ("a" Bool) ("error" Bool)
+Init: 0 1 8 9
+--BODY--
+State: 0 {("r" false) ("a" true) ("error" false)}
+2 3
+State: 1 {("r" false) ("a" false) ("error" false)}
+3 4
+State: 2 {("r" false) ("a" false) ("error" false)}
+5 6
+State: 3 {("r" false) ("a" true) ("error" false)}
+5 6
+State: 4 {("r" false) ("a" false) ("error" false)}
+4 7
+State: 5 {("r" false) ("a" false) ("error" true)}
+5 6
+State: 6 {("r" false) ("a" true) ("error" true)}
+5 6
+State: 7 {("r" false) ("a" true) ("error" false)}
+4 7
+State: 8 {("r" true) ("a" false) ("error" false)}
+8 9
+State: 9 {("r" true) ("a" true) ("error" false)}
+8 9
+--END--
