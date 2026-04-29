@@ -1,0 +1,12 @@
+HOA: v1
+Start: 0
+AP: 2  "a" "e"
+Acceptance: 0 t
+controllable-AP: 1
+--BODY--
+State: 0
+[(!0&1)] 1
+
+State: 1
+[(!0&1)] 1
+--END--
