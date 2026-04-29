@@ -1,0 +1,6 @@
+Variables: ("a" Bool) ("e" Bool)
+Init: 0
+--BODY--
+State: 0 {("a" false) ("e" true)}
+0
+--END--
