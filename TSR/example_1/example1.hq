@@ -1,0 +1,15 @@
+forall pi.
+(
+  "i1"_pi
+  &
+  (
+    XX
+    (
+    (!("i2"_pi)) 
+    U 
+    ("i1"_pi & !"i2"_pi)
+    )
+  )
+)
+->
+F {"error"_pi}

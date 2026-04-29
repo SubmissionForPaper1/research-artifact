@@ -1,0 +1,6 @@
+forall pi.
+(
+  X ("r1"_pi)
+)
+->
+X "g1"_pi

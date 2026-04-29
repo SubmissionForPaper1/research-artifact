@@ -1,0 +1,13 @@
+forall pi.
+(
+  (
+    "a"_pi
+    |
+    (
+    X
+    ("a"_pi)
+    )
+  )
+)
+ -> 
+  (XX {"error"_pi})

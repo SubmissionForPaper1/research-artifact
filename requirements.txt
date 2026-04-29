@@ -1,0 +1,10 @@
+pysat
+py-aiger
+pygraphviz
+bidict
+funcy
+sortedcontainers
+pyrsistent
+attrs
+satispy
+# spot  <-- handled separately in the read me to ensure correct binding

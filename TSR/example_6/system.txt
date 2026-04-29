@@ -1,0 +1,28 @@
+Variables: ("r0" Bool) ("r1" Bool) ("g0" Bool) ("g1" Bool)
+Init: 0 1 2 3
+--BODY--
+State: 0 {("r0" true) ("r1" false) ("g0" false) ("g1" false)}
+4 5 6 7
+State: 1 {("r0" true) ("r1" true) ("g0" false) ("g1" false)}
+4 5 6 7
+State: 2 {("r0" false) ("r1" false) ("g0" false) ("g1" false)}
+0 1 2 3
+State: 3 {("r0" false) ("r1" true) ("g0" false) ("g1" false)}
+8 9 10 11
+State: 4 {("r0" false) ("r1" false) ("g0" true) ("g1" false)}
+0 1 2 3
+State: 5 {("r0" false) ("r1" true) ("g0" true) ("g1" false)}
+0 1 2 3
+State: 6 {("r0" true) ("r1" false) ("g0" true) ("g1" false)}
+0 1 2 3
+State: 7 {("r0" true) ("r1" true) ("g0" true) ("g1" false)}
+0 1 2 3
+State: 8 {("r0" false) ("r1" false) ("g0" false) ("g1" true)}
+0 1 2 3
+State: 9 {("r0" false) ("r1" true) ("g0" false) ("g1" true)}
+0 1 2 3
+State: 10 {("r0" true) ("r1" false) ("g0" false) ("g1" true)}
+0 1 2 3
+State: 11 {("r0" true) ("r1" true) ("g0" false) ("g1" true)}
+0 1 2 3
+--END--
